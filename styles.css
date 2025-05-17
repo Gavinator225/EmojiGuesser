@@ -1,11 +1,127 @@
-html{
-    background-color: white;
+html, body {
+    background-color: #feed6e;
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
+}
+
+#start-btn{
+    width: 14vw;
+    height: 5.2vh;
+    border: none;
+}
+
+.game-area{
+    text-align: center;
+}
+
+
+.outputs{
+    background-color: wheat;
+    display: inline-block; 
+    padding: 10px;          
+    margin: 10px auto;      
+    border: 2px solid black;
+    text-align: center;
+}
+
+#emoji-output{
+    font-size: 60px;
+}
+
+#theme-output{
+    font-size: 40px;
+}
+
+#answer-submit{
+    margin-top: 2vh;
+    width: 14vw;
+    height: 5.2vh;
+    border: none;
+}
+
+#next{
+    margin-top: 2vh;
+    width: 14vw;
+    height: 5.2vh;
+    border: none;
+}
+
+#score{
+    font-size: 50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
     text-align: center;
     font-size: 5vh;
 }
+
+.glow-correct {
+  animation: greenGlow 0.3s ease-in-out;
+}
+
+.glow-incorrect {
+  animation: redGlow 0.3s ease-in-out;
+}
+
+@keyframes greenGlow {
+  0%   {background-color: green; }
+  100% { background-color: white; }
+}
+
+@keyframes redGlow {
+  0%   { background-color: red; }
+  100% {background-color: white; }
+}
+
+.letter-input {
+    margin: 12px 3px ;
+    width: 40px;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hyphen-box {
+    background-color: #eee;
+    border: none;
+    color: #333;
+}
+
+footer {
+    background-color: #feed6e;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 2vw;
+}
+
+ul{
+    list-style:  none;
+}
+
+.png-resize{
+    max-height: 6vh;
+}
+
+#copyright{
+    text-align: center;
+}
+

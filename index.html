@@ -4,39 +4,55 @@
         <!--This is the head, don't worry about the meta, the title is the title of our website in the tab-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emoji Guess</title>
+        <title>Guessmoji</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
+    <div class="wrapper">
         <header class="header">
-            <h1>Emoji Guesser</h1>
+            <h1>Guessmoji</h1>
             <hr>
         </header>
 
-        <div>
+        <div class="game-area">
+            <p id="welcome-txt">Welcome to Guessmoji, press start to play</p>
             <button id="start-btn">Start Game</button>
         </div>
 
-        <div id="game-area" style="display: none;">
-            
-            <p id="emoji-output"></p>
-            <p id="theme-output"></p>
-            <input id="answer-input" type="text" placeholder="answer">
-            <button id="answer-submit">Submit</button>
-
-
+        <div class="game-area">
+            <div id="game-area" style="display: none;">
+                <div class="outputs">
+                    <p id="emoji-output"></p>
+                    <p id="theme-output"></p>
+                </div>
+                <div class="inputs">
+                    <div id="answer-input-container"></div>
+                </div>
+                <div class="inputs">
+                    <button id="answer-submit">Submit</button>
+                </div>
+                <div>
+                    <button id="next">Next</button>
+                </div>
+                <div class="score">
+                    <p id="score">S</p>
+                </div>
+            </div>
         </div>
+    </div>
 
-
-        
-
+    <footer>
+        <ul class="footer-images">
+            <li><a href="https://github.com/Gavinator225" target="_blank"><img class="png-resize" src="github.png" alt="github-logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/gavin-pelton-aba285286/" target="_blank"><img class="png-resize" src="linkedIn.png" alt="linkedin-logo"></a></li>
+            <li><a href="https://gavinpelton.netlify.app/" target="_blank"><img class="png-resize" src="website-icon-8.png" alt="mywesbite-logo"></a></li>
+        </ul>
+        <p id="copyright">Gavin Pelton &copy;</p>
+    </footer>
 
     </body>
 
-    <footer>
-
-    </footer>
     
     <script src="script.js"></script>
 
